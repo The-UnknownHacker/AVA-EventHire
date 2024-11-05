@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ product.name }} - AVA Event Hire</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img src="/static/images/AVA Logo.png" alt="AVA Event Hire Logo" class="logo">
+        </a>
+        <nav>
+            <!-- Removed the Home link since the logo is now the home button -->
+        </nav>
+    </header>
+    <main>
+        <div class="product-detail">
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+            <div class="image-gallery">
+                {% for image in product.images %}
+                <img src="/static/images/{{ image }}" alt="{{ product.name }} Image">
+                {% endfor %}
+            </div>
+            <div class="contact">
+                <p>For more details, please contact us on our <a href="https://facebook.com/AVAEventHire">Facebook page</a>.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 AVA Event Hire. All rights reserved.</p>
+    </footer>
+</body>
+</html>

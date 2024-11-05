@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #808080; /* Light background for contrast */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(50, 50, 50, 0.8); /* Lighter black background (with some transparency) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: gold; /* Gold color for the header text */
+    margin: 0; /* Remove default margin */
+    font-size: 2.5em; /* Adjust font size as needed */
+    text-align: center; /* Center align the text */
+    flex-grow: 1; /* Allow the header to grow and take available space */
+}
+
+.logo {
+    width: 80px; /* Adjusted width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the logo perfectly round */
+    overflow: hidden; /* Hide any overflow */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center; /* Centering the welcome text */
+    margin: 20px 0;
+    font-size: 2.5em; /* Larger font size for emphasis */
+    color: #333; /* Darker text color */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 products per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    text-align: center;
+    background-color: #fff; /* White background for each product */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensures corners are rounded */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Slightly lift on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.product img {
+    width: 100%; /* Ensures image takes full width of the grid cell */
+    height: 400px; /* Increased height for a more square appearance */
+    object-fit: cover; /* Cover ensures images maintain aspect ratio without being distorted */
+    border-top-left-radius: 10px; /* Rounded corners on the top left */
+    border-top-right-radius: 10px; /* Rounded corners on the top right */
+}
+
+.product-detail {
+    padding: 20px;
+}
+
+.image-gallery img {
+    width: 28%; /* Full width of the container */
+    height: 500px; /* Set the height to 400px for uniformity */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for gallery images */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+
+.contact {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.product-detail {
+    padding: 20px;
+    text-align: center; /* Center text for the entire product detail section */
+}
+
+.product-detail h2 {
+    margin-bottom: 15px; /* Add some spacing below the heading */
+}
+
+.product-detail p {
+    margin-bottom: 20px; /* Add spacing below the paragraph */
+}
